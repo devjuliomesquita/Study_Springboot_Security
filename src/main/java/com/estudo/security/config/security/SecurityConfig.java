@@ -26,8 +26,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests((authz)-> authz
                         .requestMatchers().permitAll().anyRequest().authenticated())
                 .authenticationManager()
-                .addFilterBefore()
-                .
+                .addFilterBefore();
+
 
 
         return http.build();
